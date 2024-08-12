@@ -1,0 +1,58 @@
+TODO: 
+
+ - install git 
+ - create an account on github.com
+ 
+ 
+ - open gitbash/terminal and practice navigation
+		- cd .. --> go back
+		- cd folderLocation --> go to that folder
+		- ls 	--> show all the files and folders in the current directory
+		- pwd   --> print working directory (show me the current folder I am at)
+		
+
+Working with git: 
+	- git --version --> it should print the git version 
+	
+	
+	Stuff that you could see only at the beginning: 
+		- set username: git config --global user.name "yourUserName"
+		- set email:	git config --global user.email "yourEmail@abc.com"
+		in case you want to find out if you already have an email or username set, just type the same command
+		without giving the last part (values)
+	
+	- create a folder somewhere on your user (or you can use a current project that you practice codes on)
+	
+	- when you are sure you are there, type: 
+		- git init  --> this will initialize a new empty repository
+				-- then create files, make any changes etc. 
+			- use git status to see the current status of all files there
+		
+		- git add . --> this will move all changes (modification and new created files) to the staging area
+			- use git status .....
+		
+		- git commit -m "My first commit"   --> this will commit changes to the local repository
+	
+	
+	
+	Pushing everything to the REMOTE REPOSITORY: 
+	
+		Things you will see only once: 
+		*********when you try to push something to the remote repository for the first time, you will have 
+				 to be authenticated. (Token authentication!!!)
+			for this, watch the First Time Authentication video
+		
+	- On your github account, go to my repositories, new repository	
+		- add a name for this repository: MyFirstRepo
+		
+	- when you create a new repository
+		- check out the commands under: …or push an existing repository from the command line
+			-	git remote add origin https://github.com/sbushaj93/TestRepo.git
+					- creates a link between your local repository and this new created online repository
+			- 	git branch -M main
+					- renames your branch from master to main
+			- 	git push -u origin main *********
+					- sends your changes to the online repository and creates a tracker for this online repo
+					- it means next time you want to send something you will only have to write: git push
+					
+			
